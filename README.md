@@ -1,4 +1,4 @@
-# LoanFlow — Personal Loan Tracker
+# LoanFlow : Personal Loan Tracker
 
 LoanFlow is a full-stack personal-loan workflow application that helps customers and loan officers manage the complete loan journey from enquiry to disbursement — replacing scattered emails, manual document tracking, and unclear status updates with one structured, role-based workspace.
 
