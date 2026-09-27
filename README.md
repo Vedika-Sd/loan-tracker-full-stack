@@ -5,7 +5,9 @@ LoanFlow is a full-stack personal-loan workflow application that helps customers
 ---
 
 ## Demo
-
+<img width="1269" height="575" alt="image" src="https://github.com/user-attachments/assets/b4159cdf-9798-4e65-9907-9b530e3f86ad" />
+<img width="1366" height="689" alt="image" src="https://github.com/user-attachments/assets/5515259c-d065-4e27-bb0b-3527cb9d3214" />
+<img width="1297" height="612" alt="image" src="https://github.com/user-attachments/assets/fadbf99a-a927-4264-b78d-422966ebc358" />
 
 
 
