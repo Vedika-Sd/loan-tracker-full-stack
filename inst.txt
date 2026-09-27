@@ -1,0 +1,24 @@
+# Run backend
+.\venv\Scripts\Activate
+$env:DB_ENGINE = "sqlite3"
+python manage.py runserver
+
+python -m http.server 5173 --directory frontend
+
+open frontend - http://127.0.0.1:5173/
+
+open backen - http://127.0.0.1:8000/
+
+# SuperUser Credentials
+
+username: admin1
+email: admin1@gmail.com
+password: 12345678
+
+vedika, sayali
+1234
+customer
+
+officer
+1234
+role - officer

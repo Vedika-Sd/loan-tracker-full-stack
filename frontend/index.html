@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loanflow | Loan Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="shell">
+    <header class="topbar">
+      <a class="brand" href="#">LOAN<span>FLOW</span></a>
+      <div id="session-tools" class="session-tools hidden">
+        <span id="user-chip" class="user-chip"></span>
+        <button id="logout-button" class="button button-quiet" type="button">Sign out</button>
+      </div>
+    </header>
+
+    <main>
+      <section id="auth-view" class="auth-view">
+        <div class="intro-panel">
+          <p class="eyebrow">PERSONAL LOAN OPERATIONS</p>
+          <h1>Move every application forward.</h1>
+          <p class="intro-copy">One calm workspace for enquiries, document review, decisions, and disbursement.</p>
+          <div class="intro-rule"></div>
+          <div class="mini-stats"><span><strong>03</strong> required documents</span><span><strong>02</strong> roles</span></div>
+        </div>
+        <div class="auth-panel">
+          <div class="auth-tabs"><button class="tab active" data-auth-tab="login" type="button">Sign in</button><button class="tab" data-auth-tab="register" type="button">Create customer</button></div>
+          <form id="login-form" class="auth-form">
+            <h2>Welcome back</h2>
+            <label>Username<input name="username" required autocomplete="username"></label>
+            <label>Password<input name="password" type="password" required autocomplete="current-password"></label>
+            <button class="button button-primary" type="submit">Open workspace <span>→</span></button>
+          </form>
+          <form id="register-form" class="auth-form hidden">
+            <h2>Start an application</h2>
+            <label>Username<input name="username" required autocomplete="username"></label>
+            <label>Email<input name="email" type="email" required autocomplete="email"></label>
+            <label>Password<input name="password" type="password" minlength="8" required autocomplete="new-password"></label>
+            <button class="button button-primary" type="submit">Create customer account <span>→</span></button>
+          </form>
+          <p id="auth-message" class="form-message"></p>
+        </div>
+      </section>
+
+      <section id="app-view" class="app-view hidden">
+        <div class="page-heading">
+          <div><p id="role-label" class="eyebrow"></p><h1 id="page-title"></h1></div>
+          <button id="refresh-button" class="button button-outline" type="button">Refresh data</button>
+        </div>
+        <div id="toast" class="toast" role="status"></div>
+        <div id="dashboard-content"></div>
+      </section>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
